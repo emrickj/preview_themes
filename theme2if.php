@@ -47,17 +47,21 @@ t1 { white-space: pre-wrap;}
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
       <a class="navbar-brand" href="#"><?php echo $xml->title ?></a>
     </div>
-    <ul class="nav navbar-nav">
-      <?php displayMenu($p) ?>
-    </ul>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <?php displayMenu($p) ?>
+      </ul>
+    </div>
   </div>
 </nav>
    <div class="container">
-      <br>
-      <br>
-      <br>
       <div class="row">
          <div class="col-sm-2" style="padding: 20px">
          </div>
